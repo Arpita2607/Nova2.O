@@ -1,0 +1,151 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Arial', sans-serif; color: #3b2f2f; line-height: 1.6; }
+
+/* Header */
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 5%; background: black; background-color: #fff;
+  box-shadow: 0 2px 5px rgba(white);
+}
+.logo { display: flex; align-items: center; gap: 10px; font-size: 1.4rem; font-weight: bold; color: #4d3b2f; }
+nav ul { display: flex; gap: 20px; list-style: none; font-size: larger; }
+nav a { text-decoration: none; color: #4d3b2f; font-weight: 500; }
+nav a:hover { color: #836c11; }
+
+/* Hero */
+.hero {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  padding: 3rem 5%; background: #f8f8f5;
+  background: url(https://img.freepik.com/premium-photo/ayurveda-india-symbol-background_1279565-8380.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.hero-text { flex: 1; min-width: 300px; }
+.hero-text h1 { font-size: 3rem; color: #4d3b2f; font-family: trajan pro;font-style: bold;}
+.hero-text h2 { font-size: 1.5rem; color:#9A3F3F; margin: 10px 0; }
+.hero-text p { margin-bottom: 20px; font-size: larger; font-style: bold; font-family: Arial, Helvetica, sans-serif;}
+.cta-btn {
+  padding: 12px 20px; background: #4d3b2f; color: #fff; border-radius: 30px;
+  text-decoration: none; font-weight: bold;
+}
+.cta-btn:hover { background: #8b6f47; }
+.hero-img img { max-width: 400px; width: 100%; }
+
+/* About */
+.about { text-align: center; padding: 4rem 5%; background: #fff; font-size: larger;}
+.about h2 { font-size: 2rem; margin-bottom: 1rem; }
+.about-icons { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; }
+.about-icons div { text-align: center; }/* Nutrition Section */
+.nutrition {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  background: #f5f9f3; /* light greenish beige */
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.nutrition-img {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.nutrition-img img {
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nutrition-text {
+  flex: 1.2;
+  min-width: 300px;
+  padding: 1rem 2rem;
+}
+
+.nutrition-text h2 {
+  font-size: 2rem;
+  color: #4d3b2f; /* deep earthy brown */
+  margin-bottom: 1rem;
+}
+
+.nutrition-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.nutrition-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #8b6f47;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #b08b5c;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #8b6f47;
+  color: #8b6f47;
+}
+
+.btn.secondary:hover {
+  background: #8b6f47;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nutrition { flex-direction: column; text-align: center; }
+  .nutrition-text { padding: 1rem 0; }
+}
+
+.about-icons i { font-size: 2rem; color: #8b6f47; margin-bottom: 0.5rem; }
+
+/* Products */
+.products { padding: 4rem 5%; background: #adad38b2; text-align: center; }
+.products h2 { font-size: 2rem; margin-bottom: 2rem; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.card {
+  background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card h3 { margin-bottom: 0.5rem; color: #4d3b2f; }
+
+/* Footer */
+footer {
+  text-align: center; padding: 2rem 5%; background: #4d3b2f; color: #fff;
+}
+.social { margin-bottom: 1rem; }
+.social a { color: #fff; margin: 0 10px; font-size: 1.2rem; transition: 0.3s; }
+.social a:hover { color: #f2d7a7; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { flex-direction: column; text-align: center; }
+  .hero-img { margin-top: 2rem; }
+  nav ul { flex-direction: column; gap: 10px; }
+}

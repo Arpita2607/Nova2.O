@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('ayurveda-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/736x/27/0a/43/270a4364058dcdd62781c8be950cccd7.jpg);
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+}
+
+/* Login Card */
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Logo & Title */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 4px rgba(46,125,50,0.3);
+}
+
+/* Forgot Password */
+.forgot {
+  text-align: right;
+  margin: 5px 0 15px;
+}
+
+.forgot a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #2e7d32;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #256428;
+}
+
+/* Signup Link */
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
